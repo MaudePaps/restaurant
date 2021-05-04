@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--permet de régler les variations d'affichages des navigateurs -->
+	<meta name="description" content="Le template des démos du module 3 (feuille de style commune en version 3)">
+	
+	<!-- Font Awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<!-- Police -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&display=swap"
+	rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200&family=Merienda&display=swap" rel="stylesheet">
+	
+
+	<title>Freshly Restaurant</title>
+	<link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+
+	<header class = "flex" id ="colonne">
+		<div class ="flex" id = "logo">
+			<a href="index.html"><img src="img/logo.png" alt="logo Freshly Restaurant" ></a>
+			<h1>Freshly Restaurant</h1>
+		</div>
+		<nav class = "flex" id="navigation">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#menus">Menus</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class ="flex">
+            <h2>Details of our menus</h2>
+			<p>Choose your main course according to your menu! </p>
+            <div id="jquery-script-menu">
+                <div class="jquery-script-center">
+                    <div class="jquery-script-ads">
+                        <script type="text/javascript">google_ad_client = "ca-pub-2783044520727903";google_ad_slot = "2780937993";google_ad_width = 728;google_ad_height = 90;</script>
+                        <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                    </div>
+                    <div class="jquery-script-clear"></div>
+                </div>
+            </div>
+            <div id="buttons"></div>
+            <div id="gallery">
+                <img src="img menus/meat-01.jpg" data-tags="MEAT" alt="Alt 1" />
+                <img src="img menus/meat-02.jpg" data-tags="MEAT" alt="Alt 2" />
+                <img src="img menus/meat-03.jpg" data-tags="MEAT" alt="Alt 3" />
+                <img src="img menus/fish-01.jpg" data-tags="FISH" alt="Alt 4" />
+                <img src="img menus/fish-02.jpg" data-tags="FISH" alt="Alt 5" />
+                <img src="img menus/fish-03.jpg" data-tags="FISH" alt="Alt 6" />
+                <img src="img menus/vegan-01.jpg" data-tags="VEGAN" alt="Alt 10" />
+                <img src="img menus/vegan-02.jpg" data-tags="VEGAN" alt="Alt 11" />
+                <img src="img menus/vegan-03.jpg" data-tags="VEGAN" alt="Alt 12" />
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+                <script src="js/filter-tags.js"></script>
+            </div>
+        </section>
+
+		<h2>Deserts</h2>
+		<p>Here are the deserts you can choose to finish your meal (included in your menu).</p>
+
+		<article class ="flex">
+
+			<div class="choice">
+				<figure>
+					<img src="img menus/desert-01.jpg" alt="A plate with a tiramisu">
+					<figcaption>
+						<img class ="fourchette" src="img/fork-knife.svg" alt="">
+						<span>Tiramisu</h5></span>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img menus/desert-02.jpg" alt="Two plates with pancakes and chocolate sauce">
+					<figcaption>
+						<img class ="fourchette" src="img/fork-knife.svg" alt="">
+						<span>Freshly Pancakes</span>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img menus/desert-03.jpg" alt="A cup with red berries and soft white cheese">
+					<figcaption>
+						<img class ="fourchette" src="img/fork-knife.svg" alt="">
+						<span>Red berries cup</span>
+					</figcaption>
+				</figure>
+			</div> <!-- end of .choice -->
+		</article>
+
+		<h2>Cocktails</h2>
+		<p>Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included in the menu).</p>
+
+		<article class ="flex">
+
+			<div class="choice">
+				<figure>
+					<img src="img menus/drink-01.jpg" alt="cocktail drink">
+					<figcaption>
+						<img class ="fourchette" src="img/fork-knife.svg" alt="">
+						<span>Winter Whiskey</span>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img menus/drink-02.jpg" alt="Two cocktail drinks">
+					<figcaption>
+						<img class ="fourchette" src="img/fork-knife.svg" alt="">
+						<span>Paloma cocktail</span>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img menus/drink-03.jpg" alt="cocktail drink">
+					<figcaption>
+						<img class ="fourchette" src="img/fork-knife.svg" alt="">
+						<span>Bellini cocktail</span>
+					</figcaption>
+				</figure>
+			</div> <!-- end of .choice -->
+		</article>
+	</main>
+	
+	<footer class= "flex">
+		
+		<article>
+		<h4>Opening hours</h4>
+			<address>
+				<p> Monday: Closed</p>
+				<p>Tue-Wed : 9am - 10pm</p>
+				<p>Thu-Fri : 9am - 10pm</p>
+				<p>Sat-Sun : 5pm - 10pm</p>	
+			</address>	
+		</article>
+		
+		<article>
+		<h4>Contact</h4>
+			<address>
+				<p>13 Christopher Street</p>
+				<p>New York,</p>
+				<p>NY 10014-3543</p>
+				<p>+01 2000 800 9999</p>
+			</address>			
+		</article>
+		
+		<article>
+		<h4>Social networks</h4>
+			<a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+			<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+		</article>
+	
+	</footer>
+
+</body>
+
+</html>
