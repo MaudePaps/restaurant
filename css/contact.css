@@ -1,0 +1,106 @@
+
+
+/* ************************* MAIN *********************************/
+main{
+  width:80%;
+  margin:auto;
+}
+#contactus{
+  text-align:center;
+}
+span{
+  color:#950000;
+  border-bottom: 1px dashed #950000;
+}
+form{
+  padding:20px;
+  text-align:center;
+  flex-wrap:wrap;
+  
+}
+#info{
+  width:100%;
+}
+#reservation{
+  text-align:left;
+  width:50%;
+}
+#detail{
+  text-align:left;
+  width:50%
+}
+fieldset{
+  width:100%;
+  border:none;
+}
+input{
+  
+  border:1px solid black;
+  border-radius:0.3em;
+  line-height: 2em;
+  width:100%;
+}
+label{
+  color:black;
+}
+
+textarea{
+  width:100%;
+  height:10rem;
+}
+ul{
+  list-style-type:'\002605';
+  
+  padding:0;
+}
+#mail{
+  list-style:none;
+}
+li{
+  color: #950000;
+}
+.toolbar{
+  width:100%;
+  padding-bottom:2rem;
+}
+button{
+  font-weight: bold;
+  background-color: #4c4343;
+  color: #ebe3db;
+  border:none;
+  padding: 0.5rem;
+  border-radius:0.3em;
+  width:50%;
+}
+/* **************MAP our location******************/
+iframe{
+  width:100%;
+}
+section{
+  margin:10px;
+}
+
+
+
+/* ****************** Changement téléphone à tablette *****************/
+@media screen and (min-width: 768px) {
+ 
+  section{
+    width:90%;
+    margin:auto;
+  }
+}
+
+/* ****************** Changement  tablette à pc *****************/
+ @media screen and (min-width: 1024px) {
+ 
+
+main{
+  width:50%;
+  margin:auto;
+}
+section{
+  width:70%;
+}
+
+}

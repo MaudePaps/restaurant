@@ -1,0 +1,142 @@
+
+/* ************************* MAIN *********************************/
+main{
+  width:100%;
+  padding:1rem;
+}
+
+/* ******************Prestation*******************/
+#prestation{
+  flex-wrap:wrap;
+}
+
+article{
+  width:100%;
+}
+/* ******************Menus*******************/
+#menus{
+  flex-wrap:wrap;
+}
+li {
+  list-style-type: none;
+  
+}
+main article ul{
+  margin:2rem 0;
+}
+main article li{
+  margin:0;
+  border-bottom:1px dashed #4c4343;
+  padding-bottom:0.5rem;
+  width:90%;
+}
+main article li::before{
+  margin-right:0.2rem;
+  content: '\002605';
+  color:#950000;
+}
+
+main article a{
+  
+  font-weight:bold;
+  display:flex;
+  justify-content:center;
+  padding:0.5rem;
+  background-color: #4c4343;
+  color:#ebe3db;
+}
+main article a img{
+  height:30px;
+  width:30px;
+}
+/* ********Menu figcaption**********/
+
+figure{
+  position:relative;
+}
+figure img{
+  display:block;
+  object-fit:cover;
+}
+figcaption{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+  background-color:rgba(76,67,67,.9);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:3rem;
+  font-weight:bold;
+  transition: 3s all;
+}
+
+figcaption span{
+  font-size:1.2rem;
+  font-style:italic;
+}
+
+figcaption ::after{
+  content:"";
+  position: absolute;
+  right:2rem;
+  left:2rem;
+  top:2rem;
+  bottom:2rem;
+  border:2px solid white;
+}
+
+figcaption:hover{
+  opacity:1;
+}
+
+
+/* ****************** Changement téléphone à tablette *****************/
+@media screen and (min-width: 768px) {
+
+}
+
+/* ****************** Changement  tablette à pc *****************/
+ @media screen and (min-width: 1024px) {
+ 
+ 
+/* Main */
+
+main{
+  width:70%;
+  margin:auto;
+}
+/* flexslider */
+#flexslider{
+  width:100%;
+}
+/* prestation */
+#prestation{
+  flex-direction:row-reverse;
+  flex-wrap:nowrap;
+}
+#image{
+  width:29%;
+}
+#text{
+  flex-direction:column;
+  width:70%;
+}
+/* menus */
+
+#menus{
+  flex-direction:row-reverse;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+}
+
+#menus article{
+  width : 33%;
+}
+
+}

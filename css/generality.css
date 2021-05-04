@@ -1,0 +1,279 @@
+
+/* ==================================================== 
+                    VARIABLE
+===================================================== */
+
+:root{
+ --color_red: #950000;
+ --color_beige: #ebe3db;
+ --color_brun: #4c4343;
+ --color_black: black;
+
+ --color_fly_image_menu: rgba(76,67,67,.9);
+
+ --font_family_title: 'Merienda', cursive;
+ --font_family_body: 'Athiti', sans-serif;
+
+ --font_size_body: 18px;
+ --font_size_title_page: 30px;
+ --font_size_sub_heading :25px;
+ --font_size_title_menu: 20px;
+ --font_size_price :15px;
+ --font_size_text_under_menu: 15px;
+ --font_size_title_footer: 18px;
+ --font_size_footer: 16px;
+
+}
+
+/* ==================================================== 
+                    GENERALITE
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    /* Fond */
+    background: linear-gradient(180deg, rgba(76,67,67,1) 0%, rgba(235,227,219,1) 2%, rgba(255,255,255,1) 5%);
+
+    /* Text */
+    color: var(--color_black);
+    font-weight: bold;
+    font-family: var(--font_family_body);
+    font-size: var(--font_size_body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     /* Text */
+    font-family: var(--font_family_title);
+    padding: 0.7rem;
+    color: var(--color_black);
+}
+
+h1{
+     /* Text */
+    font-size: var(--font_size_title_page);
+}
+
+h1::before,
+h1::after {
+    /*Puce */
+    content: "\002605";
+   /* Text */
+    padding: 0 1rem;
+    color: var(--color_red);
+}
+
+h2{
+    /* Text */
+    margin: 1rem;
+    font-size: var(--font_size_sub_heading);
+    text-align: center;
+}
+
+h2::before,
+h2::after {
+    /*Puce */
+    content: "\002605";
+    /* Text */
+    padding: 0 1rem;
+    color: var(--color_red);
+}
+
+h3{
+    /* Text */
+    text-align: center;
+    margin: 1rem;
+}
+
+h3::before,
+h3::after {
+    /*Puce */
+    content: "\002605";
+    /* Text */
+    padding: 0 1rem;
+    color: var(--color_red);
+}
+
+h4{
+    margin: 1rem;
+}
+
+p{
+    font-size: var(--font_size_text_under_menu);
+    padding: 0.2rem;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.flex{
+    display:flex;
+}
+/* ==================================================== 
+                    HEADER
+===================================================== */
+
+#colonne{
+    /* Dimension  */
+    width: 100%;
+
+    /* Flex */
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+#logo{
+    /* Flex */
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#logo img{
+    height: 7rem;
+    width: 7rem;
+}
+
+#navigation{
+    /* Flex */
+    flex-direction: column;
+    text-align: center;
+}
+
+/*  ************Etat normal************ */
+nav a{
+    /* Bouton */
+    background-color: var(--color_beige);
+    border-bottom: 1px solid var(--color_black);
+
+    /* Text */
+    text-decoration: none;
+    color:var(--color_black);
+
+    /* Transition */
+    transition-property: background-color;
+    transition-duration: 2s;
+     
+}
+  
+/*  ************Lors du survol************ */
+nav a:hover{
+    /* Bouton */
+    background-color: var(--color_brun);
+
+    /* Text */
+    color:var(--color_beige);
+}
+
+/* ==================================================== 
+                    Responsive Header
+===================================================== */
+
+/* ****** téléphone à tablette *******/
+@media screen and (min-width: 768px) {
+
+    #navigation{
+        flex-direction:row;
+        justify-content:space-around;
+        margin-top:0.5rem;
+    }
+
+     #navigation a{
+        padding:0.5rem 1rem;
+        border: none;
+    }
+}
+
+/* ********* tablette à pc ***********/
+
+@media screen and (min-width: 1024px) {
+ 
+    
+    #colonne{
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:space-around;
+      align-items:center;
+      width:70%;
+      margin:auto;
+    }
+
+    #navigation a{
+      justify-content:space-between;
+      margin:2rem;
+    }
+
+    #logo{
+    flex-direction:row;
+    }
+}
+/* ==================================================== 
+                    FOOTER
+===================================================== */
+
+footer h4{
+    /* Text */
+    color: var(--color_beige);
+    padding-bottom: 1rem;
+
+    /* Boxe */
+    border-bottom: 1px dashed var(--color_beige);
+    
+}
+
+footer{
+    /* Propriete Image */
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Dimension */
+    width: 100%;
+
+    /* Text */
+    color: var(--color_beige);
+    text-align: center;
+    /* Flex */
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+  
+  
+.fab{
+    color:var(--color_beige);
+    padding:1rem;
+}
+/* ==================================================== 
+                    Responsive Footer
+===================================================== */
+
+/* ****** téléphone à tablette *******/
+@media screen and (min-width: 768px) {
+
+    footer{
+        flex-wrap:nowrap;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+ 
+/* ********* tablette à pc ***********/  
+
+footer article{
+    width:23.5%;
+  }
+}

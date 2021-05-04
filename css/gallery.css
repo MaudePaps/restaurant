@@ -1,0 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+
+/* **************** Géneralité ***********************/
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+body{
+  color:black;
+  font-weight:bold;
+  font-family: 'Athiti', sans-serif;
+  font-size:18px;
+  background: linear-gradient(180deg, rgba(76,67,67,1) 0%, rgba(235,227,219,1) 2%, rgba(255,255,255,1) 5%);
+}
+h1,h2,h3,h4,h5,h6,legend{
+  font-family: 'Merienda', cursive;
+  padding:0.7rem;
+  color:black;
+  font-weight: bold;
+}
+label{
+  color:black;
+  font-weight:bold;
+  font-family: 'Athiti', sans-serif;
+  font-size:18px;
+}
+h1{
+  font-size:27px;
+}
+h2{
+  margin:1rem;
+  font-size:25px;
+  text-align:center;
+}
+p{
+  font-size:15px;
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+h1::before,
+h1::after {
+  content: "\002605";
+  padding: 0 1rem;
+  color: #950000;
+}
+h2::before,
+h2::after {
+    content: "\002605";
+    padding: 0 1rem;
+    color: #950000;
+}
+h3::before,
+h3::after {
+    content: "\002605";
+    padding: 0 1rem;
+    color: #950000;
+}
+h3{
+  text-align:center;
+  margin:1rem;
+}
+h4{
+  margin:1rem;
+}
+p{
+  font-size:15px;
+  padding:0.2rem;
+}
+em{
+  font-size:14px;
+}
+/* **************** header ***********************/
+.flex{
+  display:flex;
+}
+
+#colonne{
+  padding-top:50px;
+  width:100%;
+  flex-direction:column;
+  flex-wrap:wrap;
+}
+#logo{
+  align-items:center;
+  flex-direction:column;
+}
+#logo img{
+  height:7rem;
+  width:7rem;
+}
+#navigation{
+  flex-direction:column;
+  text-align:center;
+}
+
+/*Etat normal*/
+nav a{
+  background-color: #ebe3db;
+  transition-property: background-color;
+  transition-duration: 2s;
+  color:black;
+  border-bottom:1px solid black;
+  text-decoration:none; 
+}
+
+/*Lors du survol*/
+nav a:hover{
+  background-color: #4c4343;
+  color:#ebe3db;
+}
+/* ***********MAIN***GENERALITE***************/
+main{
+  width: 100%;
+  margin:auto;
+  text-align:center;
+}
+main section{
+  flex-direction:column;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+#gallery{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.fourchette{
+  width:5rem;
+  height:5rem;
+}
+main article{
+  margin:auto;
+  width:100%;
+  
+}
+.choice{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+figure{
+  width:45%;
+  margin:1rem;
+}
+/* ********Menu figcaption**********/
+.choice figure{
+  position:relative;
+}
+.choice img{
+  display:block;
+  object-fit:cover;
+}
+.choice figcaption{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0;
+  background-color:rgba(220,220,220,0.5);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  font-size:3rem;
+  font-weight:bold;
+  transition: 3s all;
+}
+
+.choice figcaption span{
+  font-size:1.2rem;
+}
+
+.choice figcaption ::after{
+  content:"";
+  position: absolute;
+  right:2rem;
+  left:2rem;
+  top:2rem;
+  bottom:2rem;
+  border:2px solid white;
+}
+
+.choice figcaption:hover{
+  opacity:1;
+}
+/* ********Menu figcaption**********/
+
+/* Filter and search options */
+
+#price-range {
+  width: 370px;
+  margin: 10px auto 30px auto;
+  text-align: center;
+  font-weight: bold;
+}
+
+#value-min, #value-max {
+  width: 100px;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#slider { margin: 30px 0 30px 0; }
+
+/* Filter and search options */
+
+button, #search {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Filter buttons */
+
+button {
+  background-color: #d7d7d7;
+  margin: 5px 2px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  color: #333;
+  font-size: 100%;
+}
+
+button:hover, 
+button.active {
+  background-color: #950000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Search input */
+
+input {
+  font-size: 120%;
+  border: 1px solid #999;
+  padding: 5px;
+}
+
+input:hover { border: 1px solid #666; }
+
+input:focus {
+  border: 1px solid #00cccc;
+  outline: none;
+}
+
+/* Gallery of images */
+
+#gallery {
+  text-align: center;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+#gallery img {
+  width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  border: 8px solid #fff;
+  margin: 6px;
+  -webkit-box-shadow: 0 0 3px 3px #ebebeb;
+  box-shadow: 0 0 3px 3px #ebebeb;
+  float: left;
+}
+
+/* Table styles */
+
+table {
+  margin: 0 auto;
+  width: 780px;
+}
+
+table#rates { width: 380px; }
+
+th, td {
+  border-radius: 3px;
+  color: #333;
+  padding: 7px 10px 5px 10px;
+  min-width: 9em;
+  text-align: left;
+}
+
+th {
+  background-color: #d7d7d7;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td { background-color: #fff; }
+
+table.sortable th:hover { cursor: pointer; }
+
+th.ascending, th.descending, table.sortable th:hover {
+  background-color: #00cccc;
+  color: #fff;
+}
+
+/* Arrows for table sorting */
+
+th.ascending:after {
+  font-size: 60%;
+  content: '\25B2';
+  float: left;
+  padding: 4px 5px 0 0;
+}
+
+th.descending:after {
+  font-size: 60%;
+  content: '\25BC';
+  float: left;
+  padding: 4px 5px 0 0;
+}
+
+.about {
+  width: 780px;
+  margin: 0 auto 40px auto;
+}
+
+.about:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about h2 {
+  text-align: left;
+  float: left;
+}
+
+.bio {
+  float: right;
+  width: 195px;
+}
+
+.bio img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.location {
+  padding-left: 74px;
+  background-image: url('../img/pointer.png');
+  background-repeat: no-repeat;
+  background-position: 60px 1px;
+  font-size: 90%;
+}
+/* ************************* FOOTER *********************************/
+footer article{
+  width:100%;
+}
+
+footer h4{
+  color:#ebe3db;
+  border-bottom:1px dashed #ebe3db;
+  padding-bottom:1rem;
+}
+footer{
+  color:#ebe3db;
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width:100%;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align:center;
+}
+
+
+.fab{
+  color:#ebe3db;
+  padding:1rem;
+}
+/* ****************** Changement téléphone à tablette *****************/
+@media screen and (min-width: 768px) {
+
+  #navigation{
+    flex-direction:row;
+    justify-content:space-around;
+    margin-top:0.5rem;
+  }
+ #navigation a{
+    padding:0.5rem 1rem;
+    border: none;
+  }
+  
+  
+  footer{
+    flex-wrap:nowrap;
+  }
+  main section{
+    flex-wrap:nowrap;
+  }
+  
+  
+}
+
+/* ****************** Changement  tablette à pc *****************/
+ @media screen and (min-width: 1024px) {
+ 
+  /* header */
+  #colonne{
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    width:70%;
+    margin:auto;
+  }
+  #navigation a{
+    justify-content:space-between;
+    margin:2rem;
+  }
+#logo{
+  flex-direction:row;
+}
+/* Main */
+main{
+  width:75%;
+  justify-content:center;
+  margin:auto;
+}
+.choice{
+  flex-wrap:nowrap;
+}
+/* footer */
+
+footer article{
+  width:25%;
+}
+}
